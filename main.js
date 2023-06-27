@@ -1,4 +1,6 @@
 
+//Class to create 2d Vectors with added functionality of
+//vector addition and scalar multiplication on vector points.
 class Point2d {
     constructor(x, y) {
         this.x = x;
@@ -83,19 +85,21 @@ function Sierpiński(e) {
 }
 
 
-
+//Helper function to draw a dot
 function drawDot(position, size) {
     ctx.beginPath();
     ctx.arc(position.x, position.y, size, 0, 2 * Math.PI, false);
     ctx.fill();
 }
 
+//Helper function to generate random integer using max and min 
 function randInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+//Helper function to calculate the middle point of two points
 function midPointOf(point1, point2) {
     return point1.add(point2).divideScalar(2);
 }
