@@ -79,7 +79,7 @@ function Sierpiński(e) {
     console.log("CurrentVertex: " + currentVertex);
     currentPosition = midPointOf(currentVertex, currentPosition);
     console.log("currentPos" + currentPosition);
-    drawDot(currentPosition, 1);
+    drawDot(currentPosition, 0.5);
     animid = requestAnimationFrame(Sierpiński);
 
 }
