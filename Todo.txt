@@ -1,4 +1,4 @@
-Or more simply:
+Algorithm to constuct the Sierpinski triangle using the chaos Game:
 
     1. Take three points in a plane to form a triangle.
     
